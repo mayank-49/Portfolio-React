@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.js": "/Portfolio-React/static/js/main.d1cbf6ff.js",
+    "static/media/profile2.jpg": "/Portfolio-React/static/media/profile2.a28e24b119c02e5615fc.jpg",
+    "static/media/instagram.svg": "/Portfolio-React/static/media/instagram.f2d0bf3e18bb0fda3793f73a06bb335e.svg",
+    "static/media/github.svg": "/Portfolio-React/static/media/github.306310be363d26990ff638076908d696.svg",
+    "static/media/devdotto.svg": "/Portfolio-React/static/media/devdotto.f79689d75ef2ff991a1798a0c435174d.svg",
+    "static/media/linkedin.svg": "/Portfolio-React/static/media/linkedin.e6f58cbf0f82a08a99fa6f29978942ca.svg",
+    "static/media/twitter.svg": "/Portfolio-React/static/media/twitter.1420046156042c55b35ea48c51fce382.svg",
+    "static/media/youtube.svg": "/Portfolio-React/static/media/youtube.e89da1ee4486d5d1060e97b1c9446753.svg",
+    "index.html": "/Portfolio-React/index.html",
+    "static/media/medium.svg": "/Portfolio-React/static/media/medium.a73cd7178cc078152fd9eb34bd74f5ac.svg",
+    "static/media/envelope.svg": "/Portfolio-React/static/media/envelope.3cbe303348d3324cbe473dd089edd2e0.svg",
+    "main.d1cbf6ff.js.map": "/Portfolio-React/static/js/main.d1cbf6ff.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.d1cbf6ff.js"
+  ]
+}
