@@ -5,7 +5,6 @@ const Home = ({ imageSrc, name, title }) => {
   return (
     <section className="home">
       <div className="home-content">
-        {/* <img src={imageSrc} alt="Profile" className="profile-image" /> */}
         <h1 className="name">{name}</h1>
         <p className="title">{title}</p>
       </div>

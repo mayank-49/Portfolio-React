@@ -1,4 +1,3 @@
-/* Reset styling */
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400&family=Montserrat:wght@200;400;600;800&display=swap");
 
 * {
@@ -20,7 +19,7 @@ body {
 #main{
   background-color: #B923FF;
 }
-/* Header styling */
+
 .header {
     height: 50px;
     width: 100%;
@@ -30,7 +29,6 @@ body {
     gap: 3rem;
     align-items: center;
     padding: 1rem 2rem;
-    /* background-color: #1E0044; */
     background: linear-gradient(90deg, rgba(30,0,68,1) 32%, rgba(30,0,68,1) 68%, rgba(38,8,74,1) 71%, #B923FF 100%);
   }
 .header a{
@@ -106,7 +104,6 @@ body {
 
   @media (max-width: 768px) {
     .header {
-      /* flex-direction: column; */
       gap: 1rem;
       padding: 1rem;
     }
@@ -115,8 +112,8 @@ body {
       font-size: 1.2rem;
     }
   }
+
   
-  /* Media Query for Extra Small Screens */
   @media (max-width: 480px) {
     .header {
       padding: 0.5rem;
@@ -127,7 +124,7 @@ body {
     }
   }
 
-/* Home Section  */
+
 .home {
     display: flex;
     align-items: center;
@@ -139,7 +136,6 @@ body {
   
   .home-content {
     text-align: center;
-    /* background-color: green; */
     width: 60%;
   }
   
@@ -150,7 +146,6 @@ body {
     object-fit: cover;
     border: 5px solid #E9DEFF;
     filter: drop-shadow(20px 20px 50px white);
-    /* margin-bottom: 1rem; */
     animation: blur 2s ease forwards;
   }
 
@@ -160,7 +155,6 @@ body {
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: #E9DEFF;
     font-style: italic;
-    /* margin: 0.5rem 0; */
     animation: slideRight 1s ease forwards;
   }
   
@@ -168,95 +162,37 @@ body {
     font-size: 3rem;
     font-weight: 600;
     font-style: italic;
-    /* color: #000000; */
     color: #B923FF;
     animation: slideRight 0.5s ease forwards;
   }
   
-  @media (max-width: 1024px) {
-  .home {
-    flex-direction: column;
-    justify-content: center;
-    gap: 2rem;
-    /* padding: 1rem; */
-  }
-
-  .home-content {
-    width: 90%;
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-  }
-
-  .profile-image {
-    width: 250px;
-    height: 250px;
-  }
-
-  .name {
-    font-size: 4rem;
-  }
-
-  .title {
-    font-size: 1.8rem;
-  }
-}
-
-@media (max-width: 768px) {
-  .home-content {
-    width: 90%;
-  }
-
-  .profile-image {
-    width: 200px;
-    height: 200px;
-  }
-
-  .name {
-    font-size: 3rem;
-  }
-
-  .title {
-    font-size: 1.5rem;
-  }
-}
-
-@media (max-width: 480px) {
-  .home {
-    padding: 2rem 1rem;
-  }
-
-  .name {
-    font-size: 2.5rem;
-  }
-
-  .title {
-    font-size: 1.2rem;
-  }
-}
 
 @media (max-width: 1024px) {
   .home {
     flex-direction: column;
     justify-content: center;
-    padding: 1rem;
+    gap: 5rem;
   }
 
   .home-content {
     width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
   }
 
   .profile-image {
-    width: 250px;
-    height: 250px;
+    width: 400px;
+    height: 400px;
   }
 
   .name {
-    font-size: 4rem;
+    font-size: 3rem;
   }
 
   .title {
-    font-size: 1.8rem;
+    font-size: 2rem;
   }
 }
 
@@ -266,16 +202,16 @@ body {
   }
 
   .profile-image {
-    width: 200px;
-    height: 200px;
+    width: 400px;
+    height: 400px;
   }
 
   .name {
-    font-size: 3rem;
+    font-size: 4rem;
   }
 
   .title {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
 }
 
@@ -287,22 +223,22 @@ body {
   .name {
     font-size: 2.5rem;
   }
-
+  .profile-image {
+    width: 300px;
+    height: 300px;
+  }
   .title {
     font-size: 1.2rem;
   }
 }
 
-  /* About Section  */
 .about-container {
   max-width: 100%;
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  /* margin: 20px auto; */
   padding: 2rem;
-  /* background-color: #1E0044; */
   background: linear-gradient(90deg, rgba(30,0,68,1) 32%, rgba(30,0,68,1) 68%, rgba(38,8,74,1) 71%, #B923FF 100%);
   text-align: center;
   font-family: "Arial", sans-serif;
@@ -323,7 +259,6 @@ body {
   transform: translateY(0);
 }
 
-/* Additional styling for other elements */
 .about-heading {
   font-size: 5rem;
   color: #B923FF;
@@ -350,13 +285,18 @@ body {
   justify-content: center;
   gap: 1rem;
 }
-
+.skills-list li:hover{
+  transform: scale(1.1);
+  cursor: pointer;
+  background-color: #c2a4ff;
+}
 .skills-list li {
   background-color: #E9DEFF;
   color: #1E0044;
   padding: 0.5rem 1rem;
   border-radius: 4px;
   font-size: 1rem;
+  transition: all 0.3s ease-in-out;
 }
 
 .about-quote {
@@ -371,7 +311,10 @@ body {
   max-width: 700px;
   margin: 2rem auto;
 }
-
+.is-visible-about{
+  opacity: 1;
+  transform: translateY(0);
+}
 @media (max-width: 768px) {
   .about-heading {
     font-size: 3rem;
@@ -418,7 +361,7 @@ body {
 }
 
 
-/* Portfolio Section  */
+
 .portfolio-container {
   max-width: 100%;
   height: auto;
@@ -441,21 +384,20 @@ body {
 }
 
 .project-card {
-  /* height: 200px; */
   padding: 1.5rem;
   background-color: #E9DEFF;
-  /* background: linear-gradient(90deg,#b923ff,#E9DEFF); */
   border-radius: 10px;
   text-align: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   opacity: 0;
-  transform: translateY(30px);
-  transition: opacity 1s ease, transform 1 ease;
+  border-left: 8px solid #B923FF;
+  transition: opacity 1s ease, transform 1s ease , background 0.3s ease;
 }
 
-.project-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+.project-card:hover{
+  cursor: pointer;
+  background-color: #c2a4ff;
+  transform: scale(1.5);
 }
 
 .project-title {
@@ -480,18 +422,10 @@ body {
 .project-link:hover {
   text-decoration: underline;
 }
-.is-visible-about{
-  opacity: 1;
-  transform: translateY(0);
-}
+
 .is-visible {
   opacity: 1;
-  /* transform: translateY(0); */
   animation: slideRight 1s ease forwards;
-}
-
-.animated {
-  will-change: opacity, transform;
 }
 
 @media screen and (max-width: 768px) {
@@ -522,7 +456,7 @@ body {
   }
 
   .portfolio-grid {
-    grid-template-columns: 1fr; /* Single-column layout for smaller screens */
+    grid-template-columns: 1fr; 
   }
 
   .project-card {
@@ -543,15 +477,15 @@ body {
 }
 
 
-/* Footer Section  */
+
 #footer {
-  height: auto; /* Allow dynamic height based on content */
+  height: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 2rem;
-  padding: 2rem 0; /* Adjusted for smaller screens */
+  padding: 2rem 0; 
   background: linear-gradient(90deg, rgba(30, 0, 68, 1) 32%, rgba(30, 0, 68, 1) 68%, rgba(38, 8, 74, 1) 71%, #B923FF 100%);
   box-shadow: -5px -5px 20px #E9DEFF;
   width: 100vw;
@@ -559,9 +493,9 @@ body {
 
 .foot-container {
   display: flex;
-  flex-wrap: wrap; /* Allow icons to wrap on smaller screens */
+  flex-wrap: wrap;
   justify-content: center;
-  gap: 1.5rem; /* Adjusted for better spacing on smaller screens */
+  gap: 1.5rem;
 }
 
 img.socialIcon {
@@ -571,16 +505,16 @@ img.socialIcon {
 }
 
 img.socialIcon:hover {
-  transform: scale(1.2); /* Add a hover effect */
+  transform: scale(1.2);
 }
 
 .footer-name {
   color: #E9DEFF;
-  font-size: 1.2rem; /* Slightly smaller for better adaptability */
+  font-size: 1.2rem; 
   text-align: center;
 }
 
-/* Media queries for responsiveness */
+
 @media screen and (max-width: 768px) {
   #footer {
     padding: 1.5rem 0;
@@ -612,8 +546,7 @@ img.socialIcon:hover {
   }
 }
 
-/* Contact Section  */
-/* Container Styling */
+
 .contact-container {
   padding: 2rem;
   background: linear-gradient(90deg, rgba(30, 0, 68, 1) 32%, rgba(30, 0, 68, 1) 68%, rgba(38, 8, 74, 1) 71%, #B923FF 100%);
@@ -627,7 +560,7 @@ img.socialIcon:hover {
   color: #B923FF;
 }
 
-/* Contact Form Styling */
+
 .contact-form {
   max-width: 1200px;
   margin: 0 auto;
@@ -671,7 +604,6 @@ img.socialIcon:hover {
   box-shadow: 0 0 10px rgba(185, 35, 255, 0.3);
 }
 
-/* Button Styling */
 .contact-button {
   display: block;
   width: 100%;
@@ -679,7 +611,6 @@ img.socialIcon:hover {
   font-size: 1.2rem;
   font-weight: bold;
   color: #fff;
-  /* background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%); */
   background-color: #B923FF;
   border: none;
   border-radius: 10px;
@@ -692,7 +623,7 @@ img.socialIcon:hover {
   box-shadow: 0 8px 16px rgba(185, 35, 255, 0.3);
 }
 
-/* Responsive Design */
+
 @media screen and (max-width: 576px) {
   .contact-heading {
     font-size: 2rem;

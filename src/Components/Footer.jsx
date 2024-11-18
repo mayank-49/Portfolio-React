@@ -1,12 +1,3 @@
-/**
- * Footer component
- *
- * Displays avenues to contact you.
- * Contact information is passed in from the App component that
- * renders the Footer.
- *
- * If a social value has an empty string it will not be displayed.
- */
 import React from "react";
 import PropTypes from "prop-types";
 

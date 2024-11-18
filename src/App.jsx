@@ -9,7 +9,7 @@ import ContactMe from "./Components/Contact";
 
 const siteProps = {
   name: "Mayank Kumar",
-  title: "Web Designer & UI/UX Designer",
+  title: "Web Developer / FrontEnd Developer",
   email: "mayank04official@gmail.com",
   gitHub: "mayank-49",
   instagram: "x_mayank_04/",
